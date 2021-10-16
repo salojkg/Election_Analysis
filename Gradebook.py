@@ -1,3 +1,4 @@
+23
 #What is the score?
 score = int(input("What is your test score? "))
 
