@@ -31,8 +31,27 @@ We have already analyszed the data for the below
   - Winning Percentage: **73.8%**
 
 # Election Audit Summary
-- 
 
+This code can be reused for analyzing the result of any elctions with the same csv file format. Here are my two ways which we can accomplish
+
+Static Code Change:
+
+- Copy new details file to Reseources folder. Eg: election_results_new.csv. Edit line 10 in PyPoll_Challenge.py to update the new file name.
+
+      #file_to_load = os.path.join("Resources", "election_results.csv")
+      
+      file_to_load = os.path.join("Resources", "election_results_new.csv")
+
+Dynamic Code Change
+
+- Use input function to get the file path for the new election results file and read the file. 
+
+      #file_to_load = os.path.join("Resources", "election_results.csv")
+      
+      file_to_load = input("Enter file path")
+      
+      Output:
+      Enter file path C:/Users/Saloj/Desktop/election_results_new.csv (Demonstartion purpose only, sample path)
 
 
  
